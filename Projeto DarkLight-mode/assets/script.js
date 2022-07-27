@@ -21,14 +21,11 @@ function changeStyle() {
     const classButton= button.getAttribute('class');
     const classFooter = footer.getAttribute('class');
     
-
     body.classList.toggle(darkModeClass);
     h1.classList.toggle(darkModeClass);
     button.classList.toggle(darkModeClass);
     footer.classList.toggle(darkModeClass);
 
-    
-    
     //Mostrar no console quando mudar a classe 
     
     console.log(classBody);
@@ -51,7 +48,5 @@ function changeTexte(){
         h1.innerHTML = lightMode+ "ON";
     }
 }
-
-
 
 button.addEventListener("click", changeMode);
